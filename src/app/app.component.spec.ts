@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ng-ngxs-tutorial'`, () => {
+  it(`should have as title 'ng-ngxs-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ng-ngxs-tutorial');
+    expect(app.title).toEqual('ng-ngxs-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ng-ngxs-tutorial app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ng-ngxs-app app is running!');
   });
 });
